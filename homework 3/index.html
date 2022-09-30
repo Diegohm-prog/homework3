@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TO DO</title>
+  <style>
+    body {
+      background-color: rgb(64, 90, 90);
+    }
+
+
+
+    #output {
+      color: red;
+      font-size: 34px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <input type="text" placeholder="What day is today . . . ?" id="myInput">
+  <input type="text" placeholder="morning or afternoon . . . ?" id="myInput2">
+  <button type="button" onClick="getInputValue();">What class do I have?</button>
+  <div id="output"></div>
+
+  <div id="dayal"></div>
+
+  <div id="picture"></div>
+
+
+
+  <script type="text/javascript">
+
+    function getInputValue() {
+
+      let inputVal = document.getElementById('myInput').value;
+      let inputTime = document.getElementById('myInput2').value;
+      let day = inputVal;
+      let time = inputTime;
+      //let day = 'summer';
+
+      if (day === 'monday' && time === 'morning') {
+        document.getElementById('output').textContent = "Coding!";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/monday.jpeg" width="600px" alt="foto"' + '/>'
+        console.log('Coooding');
+      }
+
+      else if (day === 'monday' && time === 'afternoon') {
+        document.getElementById('output').textContent = "mooor Coding!";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/monday-afternoon.jpeg" width="600px" alt="foto"' + '/>'
+        console.log('more COOOOding');
+
+
+      }
+      else if (day === 'tuesday' && time === 'morning') {
+        document.getElementById('output').textContent = "Just Work";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/tuesday.jpeg" width="600px" alt="foto"' + '/>'
+        console.log('job job ;)');
+      }
+
+      else if (day === 'tuesday' && time === 'afternoon') {
+        document.getElementById('output').textContent = "Just Work again";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/tuesday-afternoon.jpeg" width="600px" alt="foto"' + '/>'
+        console.log('other day other dollar');
+      }
+
+      else if (day === 'wednesday' && time == 'morning') {
+        document.getElementById('output').textContent = "Work Again but we are in the middle of the week ";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/wednesday.JPG" width="600px" alt="foto"' + '/>'
+        console.log('we are in the middle of the week ');
+      }
+
+      else if (day === 'wednesday' && time == 'afternoon') {
+        document.getElementById('output').textContent = "Almost done.";
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/wednesday-afternoon.jpeg" width="600px" alt="foto"' + '/>'
+        console.log('Almost done!');
+      }
+
+      else if (day === 'thursday' && time == 'morning') {
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/thursday-morning.jpg" width="600px" alt="foto" ' + '/>';
+        document.getElementById('output').textContent = "Web II!";
+        console.log('Weeeebbbb II!');
+      }
+
+      else if (day === 'thursday' && time == 'afternoon') {
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/thursday.jpg" width="600px" alt="foto" ' + '/>';
+        document.getElementById('output').textContent = "work :(!";
+        console.log('work :(');
+      }
+
+      else if (day === 'friday' && time == 'morning') {
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/friday-morning.JPG" width="600px" alt="foto"' + '/>';
+        document.getElementById('output').textContent = "work but is friday!";
+        console.log('work but is friday!!');
+      }
+
+      else if (day === 'friday' && time == 'afternoon') {
+        document.getElementById('picture').innerHTML = '<img src=' + '"/img/friday-afternoon.JPG" width="600px" alt="foto" ' + '/>';
+        document.getElementById('output').textContent = "finished!";
+        console.log('finished!');
+      }
+      else {
+        document.getElementById('picture').innerHTML = '<img src=' + '"https://www.incimages.com/uploaded_files/image/1920x1080/getty_167167350_9706479704500183_94071.jpg" ' + '/>';
+        document.getElementById('output').textContent = "Nothing to do!";
+        console.log('Nothing to do!', 'color: red');
+      }
+    }
+
+
+
+
+  </script>
+
+</body>
+
+</body>
+
+</html>
